@@ -36,7 +36,7 @@ export default function Grid() {
             {value === 'tanstack' && <TanStackTable initialData={tanstackInitialData} />}
             {value === 'mui' && <MuiXDataGrid rows={muiRows} columns={muiColumns} />}
             {value === 'ag' && <GridExample sampleData={sampleData} />}
-            {value === 'myGrid' && <MyDataGrid columns={columns} rows={rows} onRowsChange={setRows} onColumnsChange={setColumns}/>}
+            {value === 'myGrid' && <MyDataGrid />}
                 <select value={value} onChange={(e) => setValue(e.target.value)}>
                     <option value='tanstack'>tanStack-table</option>
                     <option value='mui'>Mui-X-Data-Grid</option>
